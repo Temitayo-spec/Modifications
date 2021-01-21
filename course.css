@@ -1,0 +1,191 @@
+*:after,
+*:before {
+	padding: 0;
+	margin: 0;
+}
+#course_title,
+#lev {
+	padding: 1em;
+	margin: 0;
+}
+
+#content #add {
+	text-align: center;
+	width: 30%;
+}
+
+.modal-intro {
+	width: auto;
+}
+
+.levels label {
+	font-size: 1.5em;
+	display: inline-block;
+	color: #25274d;
+}
+
+.levels {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin-left: auto;
+}
+
+.description textarea {
+	height: 100px;
+}
+
+.second-portions {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.categories {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+#categ {
+	padding: 1em;
+	width: 80%;
+}
+
+#category_label {
+	font-size: 17px;
+	color: #25274d;
+}
+
+#lev {
+	padding: 1em;
+	width: 70%;
+}
+
+#level_label {
+	font-size: 17px;
+	color: #25274d;
+}
+
+/*description textarea*/
+.description label {
+	display: block;
+	font-size: 17px;
+}
+
+.description textarea {
+	height: 150px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+/*THE SUBMIT BUTTON*/
+#add-it {
+	align-self: center;
+	margin-right: 0%;
+	width: 100px;
+	background-color: #25274d;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 1em;
+	border: none;
+	outline: none;
+	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*The delete input button*/
+.fa-trash-alt {
+	color: #25274d;
+	margin-right: 4px;
+	pointer-events: none;
+}
+
+.table {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+}
+
+.table p {
+	color: #25274d;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+#item-list div {
+	display: flex;
+}
+
+.border {
+	align-items: center;
+	background: #f2f2f2;
+	width: 89%;
+	border-bottom: 1px solid #25274d;
+}
+
+.lists {
+	align-items: center;
+	justify-content: space-between;
+	width: 89%;
+	background: #f2f2f2;
+	padding: 1px 0.5em;
+}
+
+.lists p {
+	color: #25274d;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+#item-list button {
+	margin-left: auto;
+	background: #25274d;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	padding: 1px 1.5em;
+	height: 40px;
+	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#item-list button a {
+	color: white;
+	text-decoration: none;
+}
+
+.lists .thick {
+	font-weight: 800;
+}
+
+@media screen and (max-width: 800px) {
+	.table{
+		width: 85%;
+		margin: auto;
+	}
+	#content #add {
+		width: 90%;
+		margin: auto;
+	}
+
+	#item-list .items {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 5px;
+	}
+
+	.border{
+		width: 95%;
+		margin: auto;
+	}
+
+	.border .lists{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#item-list button{
+		margin: 5px;
+	}
+}

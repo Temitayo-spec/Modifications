@@ -1,0 +1,545 @@
+/*Removing defaults*/
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	background-color: #fff;
+}
+/*heading*/
+.left_area h3 {
+	font-size: 25px;
+	font-weight: 800;
+}
+
+/*Sidebar Area*/
+.sidebar {
+	top: 0px;
+	background: #25274d;
+	border-radius: 0 20px 20px 0;
+	padding-top: 50px;
+	position: fixed;
+	left: 0px;
+	width: 255px;
+	height: 100%;
+	transition: 0.5s;
+	transition-property: left;
+	z-index: 10;
+}
+
+center h1 i {
+	color: rgb(245, 245, 17);
+}
+
+.sidebar a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+center {
+	width: 80%;
+	margin: 0.5em auto;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.sidebar center h1 {
+	margin-top: 20px;
+	color: #fff;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.sidebar a {
+	font-weight: 200;
+	font-size: 1.4em;
+	color: #fff;
+	display: block;
+	width: 100%;
+	line-height: 50px;
+	text-decoration: none;
+	padding-left: 30px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.sidebar a.active {
+	background-color: #fff;
+	color: #25274d;
+}
+
+.sidebar a:hover {
+	background: #1e1f3c;
+}
+
+.sidebar i {
+	padding-right: 10px;
+}
+
+#sidebar_btn {
+	position: fixed;
+	padding: 0.5em;
+	left: 3px;
+	top: 30px;
+	margin: 5px 1px;
+	display: inline-block;
+	height: auto;
+	z-index: 20;
+	transition: 0.5s;
+	transition-property: color;
+	cursor: pointer;
+}
+
+#sidebar_btn:hover {
+	color: #1e1f3c;
+}
+
+/*The Hamburger Button*/
+
+.line1 {
+	transform: rotate(-45deg) translate(-4px, 5px);
+	background-color: #f2f2f2;
+	width: 25px;
+	height: 2px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+.line2 {
+	transform: rotate(45deg) translate(3px, 3px);
+	background-color: #f2f2f2;
+	width: 25px;
+	height: 2px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+/*Moving in and out of the sidebar*/
+#check:checked ~ .sidebar {
+	left: -200px;
+}
+
+#check:checked ~ .sidebar a span {
+	display: none;
+}
+
+#check:checked ~ .sidebar center h1 span {
+	display: none;
+}
+
+#check:checked ~ .sidebar center h1 {
+	margin-left: 195px;
+	width: 70px;
+}
+
+#check:checked ~ .sidebar center {
+	width: 100%;
+}
+
+#check:checked ~ .sidebar a {
+	font-size: 20px;
+	margin-left: 185px;
+	width: 70px;
+}
+
+/*The main content of the page*/
+#content {
+	margin-top: -10px;
+	margin-right: 2.5em;
+	transition: 0.5s;
+	margin-left: 290px;
+}
+
+#check:checked ~ #content {
+	margin-left: 80px;
+}
+
+#check {
+	display: none;
+}
+
+/*Main heading i.e Profile*/
+.head {
+	border-bottom: 1px solid #25274d;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+}
+
+.head h1 {
+	font-size: 36px;
+	font-weight: 700;
+	color: #25274d;
+}
+
+/*Move-right consist of the profile image and the notification bell*/
+.move-right {
+	display: flex;
+	height: 30px;
+	/* margin-left: auto; */
+}
+
+.move-right img {
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 60px;
+}
+
+.move-right i {
+	font-size: 25px;
+	color: #25274d;
+}
+
+/*Enabling and Disabling button*/
+.btn {
+	display: flex;
+}
+
+.btn button {
+	width: 152px;
+	height: 48px;
+	border-radius: 5px;
+	margin-top: 10px;
+	outline: none;
+	color: #fff;
+	margin-left: auto;
+	border: none;
+	cursor: pointer;
+	background-color: #25274d;
+}
+
+.btn button:hover {
+	background-color: #1e1f3c;
+}
+
+/*THE MAIN CONTENTSSSSS*/
+#main {
+	display: flex;
+	flex-direction: row;
+}
+
+#main .image {
+	height: 250px;
+	border-right: 1px solid #25274d;
+	padding: 2em;
+}
+
+#main img {
+	height: 211px;
+	width: 211px;
+	border-radius: 50%;
+}
+
+.inputs {
+	width: 100%;
+	margin-left: 2em;
+	margin-right: 3.3em;
+}
+
+.first-row {
+	display: flex;
+}
+
+.first-row input {
+	width: 100%;
+}
+
+.firstname {
+	width: 100%;
+	margin-right: 5em;
+}
+.lastname,
+.second-row,
+.bio {
+	width: 100%;
+}
+
+.third-row {
+	display: flex;
+}
+
+.inputs input {
+	width: 100%;
+	background: #f0f0f0;
+	height: 30px;
+	padding: 1.4em;
+	display: block;
+	border: 1px solid #4d4d4d;
+	border-radius: 5px;
+}
+
+.inputs label {
+	color: #4d4d4d;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+/* Hamburger Toggle styles */
+.toggle #sidebar_btn {
+	position: fixed;
+}
+
+.toggle .line1 {
+	transform: none;
+	width: 20px;
+	height: 2px;
+	border-radius: 5px;
+	background-color: #e5e5e5;
+	margin: 5px;
+}
+
+.toggle .line2 {
+	transform: none;
+	height: 2px;
+	border-radius: 5px;
+	background-color: #e5e5e5;
+	margin: 5px;
+	width: 15px;
+}
+
+/*The dropdown box*/
+
+.tutorial {
+	width: 100%;
+	margin-right: 5em;
+	position: relative;
+}
+
+#main .inputs .tutorial #dropdown .option {
+	display: none;
+}
+
+#dropdown {
+	width: 110%;
+	border: 1px solid #4d4d4d;
+	border-radius: 0.3rem;
+	position: absolute;
+	text-align: center;
+	box-sizing: border-box;
+	display: none;
+	transition: all 0.5s ease-in-out;
+}
+
+#button {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	width: 110%;
+	height: 36px;
+	padding: 2.5em;
+	background: #f2f2f2;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #4d4d4d;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#button:hover {
+	background: none;
+}
+
+.arrow {
+	border: solid black;
+	border-width: 0 2px 2px 0;
+	padding: 4px;
+	transform: rotate(45deg);
+	transition: 0.5s;
+}
+
+#dropdown label {
+	display: block;
+	padding: 1rem;
+}
+
+#dropdown .select-item {
+	background: white;
+	color: black;
+	cursor: pointer;
+}
+
+#dropdown .select-item:hover {
+	background: #f2f2f2;
+}
+
+.discipline {
+	width: 70%;
+}
+
+.active{
+	background: white;
+	color: #25274d;
+}
+
+/*Media Query*/
+@media all and (max-width: 800px) {
+	center {
+	border-bottom: none;
+}
+	/*whole container for mobile*/
+	#wrapper #main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/*Sidebar tweaks for mobile*/
+	.sidebar {
+		transition: 0.5s;
+		transition-property: left;
+		border-radius: 0px;
+		box-shadow: 2px 4px 4px rgba(0,0,0,0.3);
+	}
+
+	#sidebar_btn {
+		display: inline-block;
+		z-index: 20;
+	}
+
+	#check:checked ~ #content {
+		margin-left: 0px;
+	}
+
+	#sidebar_btn:hover {
+		color: #25274d;
+	}
+
+	#check:checked ~ .sidebar {
+		left: -280px;
+	}
+
+	#check:checked ~ .sidebar_btn {
+		display: block;
+	}
+
+	#content {
+		transition: 0.5s;
+		margin: 3em auto;
+	}
+
+	/*heading styles for mobile*/
+	.head {
+		justify-content: stretch;
+		width: 90%;
+		margin: auto;
+		text-align: center;
+	}
+
+	.head h1 {
+		position: absolute;
+		font-size: 30px;
+		margin: auto;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin-bottom: -50px;
+	}
+
+	/*notification and profile img*/
+	.move-right {
+		margin-top: -70px;
+		margin-left: auto;
+	}
+	.move-right img {
+		margin-right: 15px;
+		width: 30px;
+		height: 30px;
+	}
+
+	/*central buton*/
+	.btn {
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.btn button {
+		height: 42px;
+		width: 183px;
+		margin: 20px;
+		background: #1e1f3c;
+	}
+
+	/*main style tweaksfor mobiles*/
+	#main .image {
+		height: 200px;
+		border-right: none;
+		text-align: center;
+		padding: 2em;
+	}
+
+	.inputs .first-row {
+		display: block;
+		width: 100%;
+	}
+
+	.inputs input {
+		width: 90%;
+		margin: auto;
+		outline: none;
+		border: none;
+		height: 30px;
+		padding: 0.5em;
+		display: block;
+		background: #e6e6e6;
+	}
+
+	.inputs label{
+		margin-left: 0.7em;
+	}
+
+	.inputs {
+		margin: 0;
+	}
+
+	.discipline {
+		width: 100%;
+	}
+
+	.discipline input {
+		width: 90%;
+		margin: auto;
+	}
+
+	.inputs .third-row {
+		display: block;
+		width: 100%;
+	}
+
+	#main img {
+		height: 177px;
+		width: 177px;
+	}
+
+	/*Burger toggles*/
+	.toggle #sidebar_btn {
+		position: absolute;
+	}
+
+	.toggle .line1 {
+		background-color: #25274d;
+		border-radius: 5px;
+	}
+
+	.toggle .line2 {
+		background-color: #25274d;
+		border-radius: 5px;
+	}
+
+	#button {
+		width: 93%;
+		margin: 0.5em auto;
+		outline: none;
+		border: none;
+		height: 30px;
+		padding: 1.5em;
+		background: #e6e6e6;
+	}
+
+	#dropdown {
+		position: static;
+		width: 93%;
+		margin: auto;
+	}
+}

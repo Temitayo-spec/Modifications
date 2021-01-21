@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Profile</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="submission.css" />
+		<script src="https://kit.fontawesome.com/6f408c512b.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<!--Whole container-->
+		<!--The check input is used for the sidebar but it is hidden-->
+		<div id="wrapper">
+			<input type="checkbox" id="check" />
+			<!--check input ends-->
+
+			<!--hamburger...yummy-->
+			<label for="check">
+				<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M13 0L1 12l12 12"
+						stroke="#FFF"
+						fill="none"
+						fill-rule="evenodd"
+					/>
+				</svg>
+				<div id="sidebar_btn">
+					<div class="line1"></div>
+					<div class="line2"></div>
+				</div>
+			</label>
+
+			<!--sidebar start-->
+			<div class="sidebar">
+				<center>
+					<h1><span>Learnovate</span> <i class="fab fa-instagram"></i></h1>
+				</center>
+				<a href="profile.html"
+					><i class="far fa-user"></i><span>Profile</span></a
+				>
+				<a class="active" href="submission.html"
+					><i class="fas fa-clipboard-list"></i><span>Submissions</span></a
+				>
+				<a href="resource.html"
+					><i class="fas fa-upload"></i><span>Resources</span></a
+				>
+				<a href="discussion.html"
+					><i class="far fa-comments"></i><span>Discussion Forum</span></a
+				>
+				<a href="course.html" class="tts"
+					><i class="fas fa-tasks"></i><span>Courses</span></a
+				>
+			</div>
+			<!--sidebar ends-->
+
+			<!--Main content ahead-->
+			<main id="content">
+				<!--main heading-->
+				<header class="head">
+					<h1>Submissions</h1>
+					<div class="move-right">
+						<img src="image-john.jpg" alt="" />
+						<i class="far fa-bell"></i>
+					</div>
+				</header>
+				<div class="dropdowns">
+					<div class="first">
+						<div class="faculty">
+							<label class="label" for="">Faculty</label>
+							<button id="faculty-button" class="faculty-button" type="button">
+								<span id="select-label1"></span>
+								<div class="arrow1"></div>
+							</button>
+
+							<div id="dropdown">
+								<label class="select-item" for="engineering">Engineering</label>
+								<input
+									class="option"
+									type="radio"
+									name="drink"
+									id="engineering"
+								/>
+
+								<label class="select-item" for="science">Science</label>
+								<input class="option" type="radio" name="drink" id="science" />
+
+								<label class="select-item" for="art">Art</label>
+								<input class="option" type="radio" name="drink" id="art" />
+							</div>
+						</div>
+
+						<div class="level">
+							<label class="label" for="">Level</label>
+							<button id="level-button" class="button" type="button">
+								<span id="select-label2"></span>
+								<div class="arrow2"></div>
+							</button>
+
+							<div id="level-dropdown">
+								<label class="select-option" for="first">100</label>
+								<input class="item" type="radio" name="drink" id="first" />
+
+								<label class="select-option" for="second">200</label>
+								<input class="item" type="radio" name="level" id="second" />
+
+								<label class="select-option" for="third">300</label>
+								<input class="item" type="radio" name="level" id="third" />
+							</div>
+						</div>
+					</div>
+
+					<div class="department">
+						<label class="label" for="">Department</label>
+						<button id="department-button" class="faculty-button" type="button">
+							<span id="select-label3"></span>
+							<div class="arrow3"></div>
+						</button>
+
+						<div id="department-dropdown">
+							<label class="select-option2" for="chemical"
+								>Chemical engineering</label
+							>
+							<input
+								class="item2"
+								type="radio"
+								name="department"
+								id="chemical"
+							/>
+
+							<label class="select-option2" for="mechanical"
+								>Mechanical engineering</label
+							>
+							<input
+								class="item2"
+								type="radio"
+								name="department"
+								id="mechanical"
+							/>
+
+							<label class="select-option2" for="systems"
+								>Systems engineering</label
+							>
+							<input
+								class="item2"
+								type="radio"
+								name="depatmentr"
+								id="systems"
+							/>
+						</div>
+					</div>
+
+					<div class="course">
+						<label class="label" for="">Course code</label>
+						<button id="course-button" class="faculty-button" type="button">
+							<span id="select-label4"></span>
+							<div class="arrow4"></div>
+						</button>
+
+						<div id="course-dropdown">
+							<label class="select-option3" for="geg">GEG217</label>
+							<input class="item3" type="radio" name="course" id="geg" />
+
+							<label class="select-option3" for="eeg">EEG211</label>
+							<input class="item3" type="radio" name="course" id="eeg" />
+
+							<label class="select-optipn3" for="chg">CHG234</label>
+							<input class="item3" type="radio" name="course" id="chg" />
+						</div>
+					</div>
+				</div>
+
+				<div class="search-input">
+					<div class="search">
+						<input id="search_input" type="text" placeholder="Search for a student" />
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+								stroke="black"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M21 21L16.65 16.65"
+								stroke="black"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</div>
+				</div>
+				<section class="submission-list">
+					<div class="title">
+						<div class="sub-title">
+							<p>Name</p>
+							<p>Submission</p>
+						</div>
+					</div>
+					<div class="files">
+						<div class="one">
+							<div class="info top">
+								<p class="name">Kamal Adebayo</p>
+
+								<div class="doc-num">
+									<p>DOC-34556-2828BG</p>
+								</div>
+							</div>
+
+							<button type="button">View Doc</button>
+						</div>
+						<div class="one">
+							<div class="info">
+								<p class="name">Samuel A. Perry</p>
+
+								<div class="doc-num">
+									<p>DOC-34556-2828BG</p>
+								</div>
+							</div>
+							<button type="button">View Doc</button>
+						</div>
+						<div class="one">
+							<div class="info">
+								<p class="name">Salim Abubakar</p>
+
+								<div class="doc-num">
+									<p>DOC-34556-2828BG</p>
+								</div>
+							</div>
+							<button type="button">View Doc</button>
+						</div>
+						<div class="one">
+							<div class="info">
+								<p class="name">Ayodele Vicor Shoneyin</p>
+
+								<div class="doc-num">
+									<p>DOC-34556-2828BG</p>
+								</div>
+							</div>
+							<button type="button">View Doc</button>
+						</div>
+						<div class="one">
+							<div class="info">
+								<p class="name">Demilade Oluwadara</p>
+
+								<div class="doc-num">
+									<p>DOC-34556-2828BG</p>
+								</div>
+							</div>
+							<button type="button">View Doc</button>
+						</div>
+						<div class="one">
+							<div class="info null">
+								<p class="name">Olawanle Akinbowale</p>
+
+								<div class="doc-num">
+									<p>DOC-34556-2828BG</p>
+								</div>
+							</div>
+							<button type="button">View Doc</button>
+						</div>
+					</div>
+				</section>
+			</main>
+			<!--Main content ends here-->
+		</div>
+
+		<!--Whole container ends-->
+		<script src="main.js"></script>
+		<script defer src="sub.js"></script>
+	</body>
+</html>

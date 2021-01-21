@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Profile</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="resource.css">
+		<script src="https://kit.fontawesome.com/6f408c512b.js" crossorigin="anonymous"></script>
+		<!-- <link rel="stylesheet" href="bootstrap-4.5.2/bootstrap-4.5.2/dist/css/bootstrap.min.css"> -->
+	</head>
+	<body>
+		<!--Whole container-->
+		<!--The check input is used for the sidbar but it is hidden-->
+		<div id="wrapper">
+			<input type="checkbox" id="check" />
+			<!--check input ends-->
+
+			<!--hamburger...yummy-->
+			<label for="check">
+				<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M13 0L1 12l12 12"
+						stroke="#FFF"
+						fill="none"
+						fill-rule="evenodd"
+					/>
+				</svg>
+				<div id="sidebar_btn">
+					<div class="line1"></div>
+					<div class="line2"></div>
+				</div>
+			</label>
+
+			<!--sidebar start-->
+			<div class="sidebar">
+				<center>
+					<h1><span>Learnovate</span> <i class="fab fa-instagram"></i></h1>
+				</center>
+				<a href="profile.html"
+					><i class="far fa-user"></i><span>Profile</span></a
+				>
+				<a href="submission.html"
+					><i class="fas fa-clipboard-list"></i><span>Submissions</span></a
+				>
+				<a class="active" href="resource.html"
+					><i class="fas fa-upload"></i><span>Resources</span></a
+				>
+				<a href="discussion.html"
+					><i class="far fa-comments"></i><span>Discussion Forum</span></a
+				>
+				<a href="course.html" class="tts"
+					><i class="fas fa-tasks"></i><span>Courses</span></a
+				>
+			</div>
+			<!--sidebar ends-->
+
+			<!--Main content ahead-->
+			<main id="content">
+				<!--main heading-->
+				<header class="head">
+					<h1>Resources</h1>
+					<div class="move-right">
+						<img src="image-john.jpg" alt="" />
+						<i class="far fa-bell"></i>
+					</div>
+				</header>
+
+				<br>
+            <!--Modal Popup Button starts-->
+                    <!-- Trigger the modal with a button -->
+                    <button type="button" id="add"><i class="fa fa-plus"></i>Upload a resource</button>
+            <!--End Modal Button-->
+
+            <!--UI displayed input starts-->
+
+                <div class="display-resource">
+                    <ul class="display-list"></ul>
+                </div>
+			<!--UI displayed input starts-->
+
+			
+			<!--Modal start-->
+        <form id="my-form">
+            <div class="modal-bg">
+                <div id="modal" class="modal-intro">
+                    <header>
+                        <h2>Add a resource</h2>
+                    </header>
+
+                    <div class="msg"></div>
+
+                    <div class="title">
+                        <label>Title</label>
+                        <input type="text" id="resource-title">
+                    </div>
+                
+                    
+                    <div class="categories">
+                        <label id="category_label">Category</label>
+                        <input type="text" id="categ">
+                    </div>
+                    
+                    <div class="description">
+                        <label>Type</label>
+                        <input type="text" id="type">
+					</div>
+					
+                    <button type="submit" id="add-btn">Add</button>
+                    <span class="modal-close">X</span>
+                </div>
+        </form>
+        <!--Modal Ends-->
+			</main>
+			<!--Main content ends here-->
+		</div>
+
+		<!--Whole container ends-->
+		<script defer src="resource.js"></script>
+	</body>
+</html>

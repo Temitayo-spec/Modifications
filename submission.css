@@ -1,0 +1,431 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+center {
+	padding-bottom: 0.8em;
+	margin: 0.5em auto;
+}
+
+.head {
+	align-items: center;
+}
+
+.move-right {
+	margin-bottom: 20px;
+}
+
+.dropdowns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.level,
+.department,
+.course {
+	position: relative;
+	width: 25%;
+	flex: 1;
+}
+
+.department {
+	flex: 2;
+}
+
+.first {
+	display: flex;
+	justify-content: space-between;
+	width: 45%;
+}
+
+.faculty {
+	position: relative;
+	width: 25%;
+	flex: 1;
+}
+
+#faculty-button {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	width: 80%;
+	height: 36px;
+	padding: 2.5em;
+	background: #f2f2f2;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+}
+
+.label {
+	color: #4d4d4d;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+#content #dropdown {
+	position: absolute;
+	display: none;
+	z-index: 3;
+	width: 80%;
+}
+
+#dropdown input {
+	display: none;
+}
+
+#level-dropdown .item,
+#department-dropdown .item2,
+#course-dropdown .item3 {
+	display: none;
+}
+
+#level-dropdown {
+	width: 80%;
+}
+
+#department-dropdown {
+	width: 90%;
+}
+
+#course-dropdown {
+	width: 100%;
+}
+
+#level-dropdown,
+#department-dropdown,
+#course-dropdown {
+	position: absolute;
+	/* width: 100%; */
+	border: 1px solid #4d4d4d;
+	border-radius: 0.3rem;
+	text-align: center;
+	box-sizing: border-box;
+	display: none;
+	transition: all 0.5s ease-in-out;
+	z-index: 10;
+	background: white;
+}
+
+.level #level-button {
+	width: 80%;
+}
+
+.department #department-button {
+	width: 90%;
+}
+
+.course #course-button {
+	width: 100%;
+}
+
+.level #level-button,
+.department #department-button,
+.course #course-button {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	padding: 2em;
+	border: none;
+	height: 30px;
+	background: #f2f2f2;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	outline: none;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.level #level-button:hover,
+.department #department-button:hover,
+.course #course-button:hover {
+	background: none;
+}
+
+.arrow1,
+.arrow2,
+.arrow3,
+.arrow4 {
+	border: solid black;
+	border-width: 0 2px 2px 0;
+	padding: 4px;
+	transform: rotate(45deg);
+	transition: 0.5s;
+}
+
+#level-dropdown label,
+#department-dropdown label,
+#course-dropdown label {
+	display: block;
+	padding: 1rem;
+	cursor: pointer;
+}
+
+#level-dropdown label:hover,
+#department-dropdown label:hover,
+#course-dropdown label:hover {
+	background: #f2f2f2;
+}
+
+.search-input {
+	display: flex;
+	width: 100%;
+}
+
+.search {
+	display: inline-block;
+	margin-left: auto;
+	position: relative;
+}
+
+.search input {
+	padding: 1em 0;
+	width: 420px;
+	border: none;
+	border-bottom: 1px solid #4d4d4d;
+	position: relative;
+	outline: none;
+}
+
+.search svg {
+	position: absolute;
+	left: 390px;
+	top: 15px;
+	outline: none;
+	height: 16px;
+	width: 16px;
+	cursor: pointer;
+}
+
+.submission-list {
+	width: 100%;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.title {
+	width: 100%;
+}
+
+.sub-title {
+	display: flex;
+	width: 64%;
+	justify-content: space-between;
+}
+
+.sub-title p {
+	color: #25274d;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.files {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.files .one {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	background: #f2f2f2;
+	padding: 0.8em;
+	border-bottom: 0.3px solid #25274d;
+}
+
+.top {
+	border-radius: 5px 5px 0 0;
+}
+
+.info p {
+	color: #25274d;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.null {
+	border-bottom: none;
+	border-radius: 0 0 5px 5px;
+}
+
+.box {
+	border-radius: 5px;
+}
+.doc-num {
+	width: 40%;
+}
+
+.one button {
+	margin-left: auto;
+	background: #25274d;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	text-align: center;
+	padding: 0.6em 1em;
+	color: white;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.one button:hover {
+	background: #13153a;
+}
+
+@media all and (max-width: 800px) {
+	.dropdowns {
+		flex-wrap: wrap;
+	}
+	.first {
+		display: flex;
+		width: 95%;
+		justify-content: space-around;
+		margin: auto;
+	}
+
+	.faculty {
+		width: 90%;
+	}
+	#faculty-button {
+		width: 100%;
+		flex: 1;
+		margin: 0 0 0.5em;
+	}
+
+	#content #dropdown {
+		width: 100%;
+	}
+
+	.level {
+		width: 90%;
+	}
+
+	.level label {
+		margin-left: 10%;
+	}
+
+	.level #level-button {
+		width: 90%;
+		margin-left: auto;
+	}
+	/* #level-dropdown {
+		width: 90%;
+		margin-left: 18px;
+	} */
+	.department {
+		display: block;
+		width: 95%;
+		margin: auto;
+		flex: none;
+	}
+	.department #department-button {
+		width: 100%;
+		margin: 0;
+	}
+
+	.course {
+		width: 95%;
+		margin: auto;
+		flex: none;
+	}
+	.course #course-button {
+		width: 50%;
+	}
+	#content {
+		margin-top: 4em;
+	}
+	.move-right {
+		margin-top: -80px;
+	}
+	.search {
+		margin: auto;
+		width: 95%;
+	}
+	.search input {
+		width: 100%;
+	}
+
+	.search svg {
+		left: 90%;
+	}
+
+	.title{
+		width: 95%;
+		margin: auto;
+		display: none;
+	}
+
+	.files{
+		width: 95%;
+		margin: auto;
+	}
+
+	.info{
+		flex-direction: column;
+		width: 70%;
+	}
+
+	.doc-num{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1025px) {
+	.dropdowns {
+		/* flex-wrap: wrap; */
+		justify-content: space-between;
+	}
+
+	.first {
+		width: 45%;
+	}
+
+	.faculty,
+	.level,
+	.department,
+	.course {
+		width: 25%;
+		flex: 1;
+	}
+
+	.department {
+		flex: 2;
+	}
+
+	#faculty-button {
+		width: 80%;
+	}
+
+	.level #level-button {
+		width: 80%;
+	}
+
+	.department #department-button {
+		width: 90%;
+	}
+
+	.course #course-button {
+		width: 100%;
+	}
+}
